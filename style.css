@@ -1,0 +1,419 @@
+:root {
+    --color-dark: #222222;
+    --color-light-dark: #333333;
+    --color-white: #ffffff;
+    --color-gray: #f5f5f5;
+    --color-text: #666666;
+    --color-primary: #ffc933; /* The golden/yellow button color */
+    --color-link: #333333;
+    --color-rating: #ffc933;
+}
+
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    line-height: 1.6;
+    color: var(--color-text);
+    background-color: var(--color-white);
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px; /* Standard website width */
+    margin: 0 auto;
+}
+
+h1, h2, h3 {
+    color: var(--color-dark);
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+h1 { font-size: 3rem; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.25rem; }
+
+a {
+    text-decoration: none;
+    color: var(--color-link);
+}
+
+/* --- 2. Button Styles --- */
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background-color 0.3s;
+    text-align: center;
+}
+
+.btn-primary {
+    background-color: var(--color-primary);
+    color: var(--color-dark);
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #e6b72a; /* Slightly darker primary color */
+}
+
+.btn-secondary {
+    /* Used in the About section */
+    background-color: var(--color-primary);
+    color: var(--color-dark);
+    border: none;
+}
+
+.btn-link {
+    /* Used in the Services cards */
+    color: var(--color-primary);
+    background: none;
+    padding: 0;
+    font-size: 0.9rem;
+}
+
+.btn-link:hover {
+    color: #e6b72a;
+}
+
+/* --- 3. Header/Navigation --- */
+.header {
+    background-color: var(--color-light-dark);
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: var(--color-white);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.nav a {
+    color: var(--color-white);
+    margin-left: 20px;
+    font-size: 0.95rem;
+    opacity: 0.8;
+}
+.nav a:hover {
+    opacity: 1;
+    color: var(--color-primary);
+}
+
+/* --- 4. Hero Section --- */
+.hero-section {
+    background-color: var(--color-light-dark);
+    padding: 6rem 0;
+    color: var(--color-white);
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.hero-text {
+    flex: 1;
+    max-width: 50%;
+}
+
+.hero-text h1 {
+    color: var(--color-white);
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+}
+
+.hero-text p {
+    color: #cccccc;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+.hero-image {
+    flex: 1;
+    max-width: 50%;
+    text-align: right;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* --- 5. About Section --- */
+.about-section {
+    padding: 4rem 0;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.about-text {
+    flex: 1;
+    max-width: 50%;
+}
+
+.about-image {
+    flex: 1;
+    max-width: 50%;
+}
+
+.about-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; /* Optional: for a cleaner look */
+}
+
+.about-text p {
+    margin-bottom: 1.5rem;
+}
+
+/* --- 6. Services Section --- */
+/* --- 6. Projects Section (White Background) --- */
+.projects-section {
+    padding: 4rem 0;
+    background-color: var(--color-gray); /* Pure white to stand out */
+}
+
+.projects-grid {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.project-card {
+    background-color: #fcfcfc; /* Very subtle off-white for the card */
+    padding: 2rem;
+    border-radius: 8px;
+    border: 1px solid #eee; /* Light border so cards are visible on white */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+    flex: 1;
+    max-width: 350px;
+    text-align: center;
+}
+
+/* --- 7. Services Section (Gray Background) --- */
+.services-section {
+    padding: 4rem 0;
+    background-color: var(--color-white); /* Light gray background */
+}
+
+.services-grid {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.service-card {
+    background-color: var(--color-white); /* White cards to pop off the gray */
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0.25, 0.20);
+    flex: 1;
+    max-width: 350px;
+    text-align: center;
+}
+
+/* --- Shared Elements (Icons & Titles) --- */
+.section-title {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.service-icon, .project-icon {
+    font-size: 1.5rem; /* Adjusted slightly for Font Awesome */
+    color: var(--color-primary);
+    width: 50px;
+    height: 50px;
+    border: 1px solid var(--color-primary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+}
+
+.service-card:hover, .project-card:hover {
+    transform: translateY(-5px); /* Moves card up 5 pixels*/
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Deeper shadow*/
+	transition: all 0.3s ease; /* Makes the movement smooth */
+}
+
+/* --- 7. Responsive Adjustments (For smaller screens) --- */
+@media (max-width: 768px) {
+    
+    h1 { font-size: 2rem; }
+    
+    .hero-content, 
+    .about-container, 
+    .services-grid {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text, 
+    .about-text, 
+    .hero-image, 
+    .about-image {
+        max-width: 100%;
+    }
+    
+    /* Reverse the order of text and image in the About section on mobile */
+    .about-container {
+        flex-direction: column-reverse;
+    }
+
+    .hero-section {
+        padding: 3rem 0;
+    }
+
+    .nav {
+        display: none; /* Hide navigation on small screens, a common pattern */
+    }
+    
+    .nav-container {
+        justify-content: center;
+    }
+}
+
+/* --- 8. Testimonials Section (Basic Styling) --- */
+.testimonials-section {
+    padding: 4rem 0;
+    text-align: center;
+}
+
+/* --- 9. Footer Section --- */
+.footer {
+    background-color: var(--color-light-dark);
+    color: var(--color-white);
+    padding-top: 4rem;
+    font-size: 0.9rem;
+}
+
+.footer-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    padding-bottom: 3rem;
+    flex-wrap: wrap; /* Allows columns to wrap on smaller screens */
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 180px; /* Ensures columns don't get too narrow */
+}
+
+.footer-column h3, .footer-column h4 {
+    color: var(--color-white);
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.footer-column p {
+    color: #cccccc;
+    margin-bottom: 0.5rem;
+}
+
+.footer-column ul {
+    list-style: none;
+}
+
+.footer-column ul li {
+    margin-bottom: 0.75rem;
+}
+
+.footer-column a {
+    color: #cccccc;
+    transition: color 0.3s;
+}
+
+.footer-column a:hover {
+    color: var(--color-primary); /* Golden hover effect */
+}
+
+/* Social Icons */
+.social-links {
+    margin-top: 1.5rem;
+    display: flex;
+    gap: 15px;
+}
+
+.social-links a {
+    color: var(--color-primary);
+    font-size: 1.1rem;
+    border: 1px solid var(--color-primary);
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-links a:hover {
+    background-color: var(--color-primary);
+    color: var(--color-dark);
+}
+
+/* Footer Bottom Copyright */
+.footer-bottom {
+    text-align: center;
+    padding: 1rem 0;
+    border-top: 1px solid #444444; /* Subtle line above copyright */
+}
+
+.footer-bottom p {
+    color: #999999;
+    margin: 0;
+    font-size: 0.8rem;
+}
+
+/* Update Responsive Section for Footer */
+@media (max-width: 768px) {
+    /* Existing rules are here... */
+    
+    .footer-grid {
+        flex-direction: column;
+        text-align: center;
+        gap: 3rem;
+    }
+    
+    .footer-column {
+        min-width: 100%;
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+}
+.section-title {
+    font-family: 'Sacramento', cursive;
+    font-size: 5.5rem;      /* Bigger to take up space */
+    font-weight: 500;
+    color: #222;            /* Deep black/gray for high contrast */
+    margin-bottom: 2.5rem;
+    text-align: center;
+    display: block;
+    width: 100%;
+}
