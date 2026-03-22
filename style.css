@@ -179,9 +179,9 @@ a {
 }
 
 .about-image img {
-    max-width: 100%;
+    max-width: 75%;
     height: auto;
-    border-radius: 8px; /* Optional: for a cleaner look */
+    border-radius: 75% 50%; /* Optional: for a cleaner look */
 }
 
 .about-text p {
@@ -228,7 +228,8 @@ a {
     background-color: var(--color-white); /* White cards to pop off the gray */
     padding: 2rem;
     border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0.25, 0.20);
+	border: 1px solid #b3b3b3;
+    box-shadow: 0 4px 12px rgba(0, 0, 0.20, 0.30);
     flex: 1;
     max-width: 350px;
     text-align: center;
