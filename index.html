@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+  <script src="script.js" defer></script>
 </head>
 <body>
     <header class="header">
@@ -19,9 +20,16 @@
                 <a href="#home">Home</a>
                 <a href="#about">About me</a>
                 <a href="certificate.html">Certificates</a>
-                <a href="#projects">Projects</a>
-                <a href="#services">Services</a>
-                <a href="#resume">Resume</a>
+                <a href="projects.html">Projects</a>
+                <a href="services.html">Services</a>
+                <div class="resume-dropdown">
+    <a href="#" onclick="toggleResumeMenu(event)">Resume ▾</a>
+    
+    <div id="resumeMenu" class="resume-menu">
+        <a href="resume.pdf" target="_blank">View</a>
+        <a href="resume.pdf" download>Download</a>
+    </div>
+</div>
                 <a href="#contact">Contact</a>
             </nav>
         </div>

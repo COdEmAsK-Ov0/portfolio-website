@@ -418,3 +418,41 @@ a {
     display: block;
     width: 100%;
 }
+
+/*Resume dropdown*/
+.resume-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.resume-menu {
+    display: none;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    background: white;
+    min-width: max-content;
+	min-width: 120px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    border-radius: 6px;
+    overflow: hidden;
+    z-index: 1000;
+	padding: 0;
+}
+
+.resume-menu a {
+    display: block;
+    padding: 10px 12px;
+	margin: 0;
+    text-decoration: none;
+    color: black;
+}
+
+.resume-menu a:hover {
+    background-color: var(--color-primary);
+    color: var(--color-dark);
+}
+
+.resume-menu.show {
+    display: block;
+}
