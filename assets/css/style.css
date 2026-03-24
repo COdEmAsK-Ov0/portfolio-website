@@ -7,6 +7,10 @@
     --color-primary: #ffc933; /* The golden/yellow button color */
     --color-link: #333333;
     --color-rating: #ffc933;
+	--primary-color: #ffc933;
+	--secondary-color: #222222;
+	--border-radius: 8px;
+	--card-background: #fff;
 }
 
 *{
@@ -455,4 +459,145 @@ a {
 
 .resume-menu.show {
     display: block;
+}
+
+/* --- Form Components (Shared) --- */
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.input-group input[type="email"],
+.input-group input[type="password"],
+.input-group input[type="text"],
+.input-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: var(--border-radius);
+    box-sizing: border-box; /* Important for padding */
+    transition: border-color 0.3s;
+}
+
+.input-group input:focus,
+.input-group textarea:focus {
+    border-color: var(--primary-color);
+    outline: none;
+}
+
+.primary-button {
+    width: 100%;
+    padding: 15px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: var(--border-radius);
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.primary-button:hover {
+    background-color: #2980b9;
+}
+
+/* --- LOGIN PAGE STYLES --- */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh; /* Keeps it centered vertically on the page */
+}
+
+.login-box {
+    background-color: var(--card-background);
+    padding: 40px;
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 380px;
+    text-align: center;
+}
+
+.login-box h2 {
+    color: var(--secondary-color);
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+.links-group a {
+    color: var(--primary-color);
+    text-decoration: none;
+    display: block;
+    margin-top: 15px;
+}
+
+.links-group p {
+    margin-top: 10px;
+}
+
+
+/* --- CONTACT PAGE STYLES --- */
+.contact-container {
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.contact-layout {
+    display: flex;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.contact-form-column,
+.contact-info-column {
+    background-color: var(--card-background);
+    padding: 30px;
+    border-radius: var(--border-radius);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+}
+
+.contact-form-column {
+    flex: 2; /* Takes more space for the form */
+}
+
+.contact-info-column {
+    flex: 1; /* Less space for info */
+    background-color: var(--background-color); /* Subtle difference */
+}
+
+.info-block {
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px dashed #ddd;
+}
+
+.info-block h4 {
+    color: var(--primary-color);
+    margin-top: 0;
+}
+
+.response-time {
+    font-weight: bold;
+    color: var(--secondary-color);
+    padding: 10px;
+    background-color: #f7f9fb;
+    border-radius: var(--border-radius);
+    text-align: center;
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 768px) {
+    .contact-layout {
+        flex-direction: column;
+    }
+    .login-box {
+        margin: 20px;
+    }
 }
