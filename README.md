@@ -40,7 +40,7 @@ This portfolio is designed to present my work, technical skills, and achievement
 ---
 
 ## 📂 Project Structure
-
+```
 portfolio/
 │── assets/
 │   ├── css/            # Stylesheets
@@ -54,7 +54,7 @@ portfolio/
 │── certificate.html    # Certifications page
 │
 │── README.md           # Project documentation
-
+```
 ---
 
 ## 📸 Screenshots
