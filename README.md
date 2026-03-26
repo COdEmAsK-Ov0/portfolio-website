@@ -39,9 +39,7 @@ This portfolio is designed to present my work, technical skills, and achievement
 
 ---
 
-📂 Project Structure
-
-📂 Project Structure
+## 📂 Project Structure
 
 portfolio/
 │── assets/
@@ -59,9 +57,9 @@ portfolio/
 
 ---
 
-📸 Screenshots
- assets/images/portfolio-website.png
-(Add screenshots of your website here)
+## 📸 Screenshots
+
+![Portfolio Preview](assets/images/portfolio-website.png)
 
 ---
 
