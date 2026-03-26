@@ -67,7 +67,7 @@ portfolio/
 
 1. Clone the repository
 
-git clone https://github.com/your-username/your-repo-name.git
+https://github.com/COdEmAsK-Ov0/portfolio-website.git
 
 2. Open the project folder
 3. Run "index.html" in your browser
