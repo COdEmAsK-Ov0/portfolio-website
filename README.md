@@ -60,7 +60,6 @@ portfolio/
 ## 📸 Screenshots
 
 ![Portfolio Preview](assets/images/portfolio-website.png)
-![Portfolio Preview](assets/images/portfolio-website-mobile.jpeg)
 
 ---
 
